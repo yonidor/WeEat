@@ -1,11 +1,7 @@
-<h1>Bla bla!</h1>
+<h1>Restaurants list</h1>
 
-
-<!--<header>-->
-<!--</header>-->
-
-<!--<ul>-->
-  <!--<li>-->
-    <!---->
-  <!--</li>-->
-<!--</ul>-->
+<ul>
+  <% @restaurants.each do |rest| %>
+      <li> <%= link_to rest.name, rest %> </li>
+  <% end %>
+</ul>

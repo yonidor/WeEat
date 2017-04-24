@@ -1,1 +1,13 @@
-<h1><%= @restaurant.name %></h1>
+<h1>Restaurant name: <%= @restaurant.name %></h1>
+
+<div>
+  Kind of cuisine: <%= @restaurant.cuisines %>
+  <br>
+  rating: <%= @restaurant.rating %>
+  <br>
+  Accepts 10Bis? <%= @restaurant.accepts10bis? ? "Yes" : "No" %>
+  <br>
+  Address: <%= @restaurant.address %>
+  <br>
+  Maximum delivery time: <%= @restaurant.max_delivery_times %> minutes
+</div>
