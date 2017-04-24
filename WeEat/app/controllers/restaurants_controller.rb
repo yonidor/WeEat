@@ -23,6 +23,9 @@ class RestaurantsController < ApplicationController
   end
 
   def destroy
+    Restaurant.delete(params[:id])
+
+    redirect_to restaurants_path
   end
 
   def update

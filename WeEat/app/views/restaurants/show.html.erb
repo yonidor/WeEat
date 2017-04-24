@@ -11,3 +11,7 @@
   <br>
   Maximum delivery time: <%= @restaurant.max_delivery_times %> minutes
 </div>
+<br>
+<%= link_to "Edit details", edit_restaurant_path(@restaurant)%>
+<br>
+<%= link_to "Back to all restaurants", restaurants_path %>
