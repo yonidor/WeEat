@@ -1,6 +1,7 @@
 class RestaurantsController < ApplicationController
   def index
-    @restaurants = Restaurant.all
+    @app_props = { restaurants: Restaurant.all, nums: ["One", "Two"]}
+    # @restaurants = Restaurant.all
   end
 
   def show
