@@ -1,0 +1,17 @@
+<h1>Restaurant name: <%= @restaurant.name %></h1>
+
+<div>
+  Kind of cuisine: <%= @restaurant.cuisines %>
+  <br>
+  rating: <%= @restaurant.rating %>
+  <br>
+  Accepts 10Bis? <%= @restaurant.accepts10bis? ? "Yes" : "No" %>
+  <br>
+  Address: <%= @restaurant.address %>
+  <br>
+  Maximum delivery time: <%= @restaurant.max_delivery_times %> minutes
+</div>
+<br>
+<%= link_to "Edit details", edit_restaurant_path(@restaurant)%>
+<br>
+<%= link_to "Back to all restaurants", restaurants_path %>
