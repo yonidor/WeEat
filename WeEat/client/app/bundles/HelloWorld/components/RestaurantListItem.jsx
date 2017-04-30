@@ -1,4 +1,6 @@
 import React from 'react';
+import TenBisIcon from './TenBisIcon'
+import Rating from './Rating'
 
 export default class RestaurantsListItem extends React.Component {
   /**
@@ -10,9 +12,18 @@ export default class RestaurantsListItem extends React.Component {
   }
 
   render() {
+    const tenBisIcon = this.props.restaurant.accepts10bis ? <TenBisIcon/> : null;
+
     return (
-      <li>
-          <div>{this.props.restaurant.name}</div>
+      <li className="restaurant-item">
+          <div className="title">
+              {this.props.restaurant.name}
+              {tenBisIcon}
+          </div>
+          <div className="rating-container">
+              Rating:
+              <Rating value={this.props.restaurant.rating} />
+          </div>
       </li>
     );
   }

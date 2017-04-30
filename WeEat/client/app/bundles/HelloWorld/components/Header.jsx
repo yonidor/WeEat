@@ -1,4 +1,5 @@
 import React from 'react';
+import AddButton from './AddButton';
 
 export default class Header extends React.Component {
   /**
@@ -12,9 +13,9 @@ export default class Header extends React.Component {
   render() {
     return (
         <header>
-          <h1>
-            This is the header!
-          </h1>
+          <h2> EatWell </h2>
+          <h3> Let's find lunch now </h3>
+          <AddButton targetUrl={this.props.header.addTargetUrl}/>
         </header>
     );
   }

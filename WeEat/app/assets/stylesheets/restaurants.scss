@@ -1,3 +1,38 @@
 // Place all the styles related to the Restraurants controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.restaurants-content { margin-left: 20px }
+
+.restaurants-filters {
+  margin-bottom: 20px;
+
+  .filter {
+    width: 33%;
+    display: inline-block;
+  }
+}
+
+.restaurants-list {
+
+  .restaurant-item {
+    list-style-type: none;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+
+    .tenBisIcon {
+      margin-left: 5px;
+    }
+
+    .title {
+      margin-bottom: 5px;
+    }
+
+    .rating-container {
+      font-size: 12px;
+    }
+  }
+}

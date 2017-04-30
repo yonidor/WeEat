@@ -1,6 +1,11 @@
 class RestaurantsController < ApplicationController
   def index
-    @app_props = { restaurants: Restaurant.all, nums: ["One", "Two"]}
+    @app_props = {
+        restaurants: Restaurant.all,
+        header: {
+            addTargetUrl: new_restaurant_path
+        }
+    }
     # @restaurants = Restaurant.all
   end
 

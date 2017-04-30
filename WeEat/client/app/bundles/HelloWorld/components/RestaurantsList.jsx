@@ -8,20 +8,13 @@ export default class RestaurantsList extends React.Component {
    */
   constructor(props, _railsContext) {
     super(props);
-
-    this.state = {
-        restaurants: props.restaurants
-    }
   }
 
   render() {
     return (
-        <ul>
-            { this.state.restaurants.map((rest) => <RestaurantListItem restaurant={rest} /> )}
+        <ul className="restaurants-list">
+            { this.props.restaurants.map((rest) => <RestaurantListItem restaurant={rest} /> )}
         </ul>
-        // <ul>
-        //     { this.state.restaurants.map((rest) => <li> {rest.name} </li> )}
-        // </ul>
     );
   }
 }
