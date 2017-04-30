@@ -1,0 +1,19 @@
+<h2> Reviews for <%=@restaurant.name%></h2>
+<%= link_to "Add a review", new_restaurant_review_path %>
+<%= link_to "Back to #{@restaurant.name}", restaurant_path(@restaurant) %>
+
+<br><br>
+<% @reviews.each do |rev| %>
+    <div>
+      Author name: <%= rev.author_name%>
+    </div>
+
+    <div>
+      Rating: <%= rev.rating%>
+    </div>
+
+    <div>
+      <%= rev.review_text%>
+    </div>
+    <br>
+<% end %>
