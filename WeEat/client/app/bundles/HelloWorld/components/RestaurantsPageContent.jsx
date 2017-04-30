@@ -35,8 +35,6 @@ export default class RestaurantsPageContent extends React.Component {
     if (this.state.filters.timeToDeliver != "15")
       restaurants = restaurants.filter((item) => item.max_delivery_times >= parseInt(this.state.filters.timeToDeliverFilter))
 
-
-
     return restaurants;
   }
 

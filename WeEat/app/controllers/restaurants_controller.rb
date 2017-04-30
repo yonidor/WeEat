@@ -6,7 +6,6 @@ class RestaurantsController < ApplicationController
             addTargetUrl: new_restaurant_path
         }
     }
-    # @restaurants = Restaurant.all
   end
 
   def show
